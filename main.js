@@ -2,10 +2,10 @@
 "use strict";
 
 function compress(str) {
-    if (/[^a-zA-Z0-9 ]/.test(str)){
-        return "Please only use a-z + A-Z + 0-9 + space";
+    if (/[^a-zA-Z0-9 \n]/.test(str)){
+        return "Please only use a-z + A-Z + 0-9 + space + newline";
     } else {
-        var alpha = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 1234567890";
+        var alpha = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 1234567890\n!\"#$%&'()*+,-.:;<=>?@[]^_`{|}~";
         var symbols = "!\"#$%&'()*+,-.:;<=>?@[]^_`{|}~";
         var counter = 0;
         for (var i = 0; i < alpha.length; i++) {
