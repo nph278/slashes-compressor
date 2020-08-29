@@ -11,17 +11,18 @@ body {
     font-size: 30px;
     border-style: solid;
     border-color: rgb(152, 152, 152);
-    width: 33%;
-    left: 33%;
+    width: 33.3%;
+    left: 33.2%;
     top: 1%;
     height: 5%;
-}
-
-#compressbtn {
     cursor: pointer;
 }
 
 #inelm {
-    width: 33%;
+    width: 33.33%;
     height: 25%;
+}
+
+#compresstxt {
+    user-select: none;
 }
