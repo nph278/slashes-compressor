@@ -25,7 +25,11 @@ body {
     border-radius: 10px;
     background-color: rgb(125, 125, 125);
     font-family: 'Source Code Pro', monospace;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
+
+#inelm::-webkit-scrollbar { width: 0 !important }
 
 #inelm:focus, #inelm:active {
     outline:0px !important;
