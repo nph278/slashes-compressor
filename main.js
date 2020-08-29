@@ -5,8 +5,18 @@ function compress(str) {
     if (/[^a-zA-Z0-9 \n]/.test(str)){
         return "Please only use a-z + A-Z + 0-9 + space + newline";
     } else {
-        var alpha = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 1234567890\n!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
-        var symbols = "!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
+        if (/[a-z]/.test(str)){
+            if (/[A-Z]/.test(str)){
+                var symbols = "!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
+                var alpha = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 1234567890\n!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
+            } else {
+                var alpha = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 1234567890\n!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
+                var symbols = "QWERTYUIOPASDFGHJKLZXCVBNM!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
+            }
+        } else {
+            var symbols = "qwertyuiopasdfghjklzxcvbnm!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
+            var alpha = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm 1234567890\n!\"#$%&'()*+,-.:;<=>?@[]^_`{|}";
+        }
         var counter = 0;
         for (var i = 0; i < alpha.length; i++) {
             for (var j = 0; j < alpha.length; j++) {
