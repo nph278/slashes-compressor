@@ -8,7 +8,9 @@
     </head>
     <body>
         <textarea id="inelm" rows="8" cols="80"></textarea><br>
-        <button onclick="inelm.innerHTML=compress(inelm.html);">Compress</button>
+        <div id="compress">
+            <a onclick="inelm.innerHTML=compress(inelm.html);" id="compressbtn">Compress</a>
+        </div>
     </body>
     <script src="main.js" charset="utf-8"></script>
 </html>
