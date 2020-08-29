@@ -21,6 +21,15 @@ body {
 #inelm {
     width: 33.33%;
     height: 25%;
+    border-radius: 10px;
+    background-color: rgb(125, 125, 125);
+    font-family: 'Source Code Pro', monospace;
+}
+
+#inelm:focus, #inelm:active {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
 }
 
 #compresstxt {
