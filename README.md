@@ -1,2 +1,2 @@
 # slashes-compressor
-Compress strings using ///
+Compress strings using [///](https://esolangs.org/wiki////)
