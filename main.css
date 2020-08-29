@@ -8,6 +8,12 @@ body {
 
 #compress {
     font-size: 30px;
-    border: rgb(152, 152, 152);
+    border-style: solid;
+    border-color: rgb(152, 152, 152);
     width: 33%;
+    height: 5%;
+}
+
+#compressbtn {
+    cursor: pointer;
 }
