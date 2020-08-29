@@ -7,14 +7,21 @@ body {
 }
 
 #compress {
+    position: relative;
     font-size: 30px;
     border-style: solid;
     border-color: rgb(152, 152, 152);
     width: 33%;
     left: 33%;
+    top: 1%;
     height: 5%;
 }
 
 #compressbtn {
     cursor: pointer;
+}
+
+#inelm {
+    width: 33%;
+    height: 25%;
 }
