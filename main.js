@@ -8,7 +8,6 @@ function compress(str) {
         var a = symbols.indexOf(setstr[i]);
         symbols = symbols.slice(0,a)+symbols.slice(a+1,symbols.length);
     }
-    alert(symbols);
     var alpha = setstr + symbols;
     var counter = 0;
     for (var i = 0; i < alpha.length; i++) {
