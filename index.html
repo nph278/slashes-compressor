@@ -11,8 +11,9 @@
         <br>
         <br>
         <br>
+        <span id="byteselm"></span>
         <textarea id="inelm" rows="10" autofocus="autofocus" spellcheck="false"></textarea><br>
-        <div id="compress" onclick="inelm.value=compress(inelm.value);">
+        <div id="compress" onclick="o=inelm.value.length;inelm.value=compress(inelm.value);byteselm.innerText = o+' -> '+inelm.value.length">
             <a id="compresstxt">Compress</a>
         </div>
     </body>

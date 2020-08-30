@@ -40,3 +40,7 @@ body {
 #compresstxt {
     user-select: none;
 }
+
+#byteselm {
+    display: block;
+}
